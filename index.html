@@ -7,45 +7,53 @@
     <link rel="stylesheet" href="css/dashclock.css">
 </head>
     <body class="body bg">
-        <div class="all">
-            <div id="timeDisplay">
-                <div class="h1">
-                    <span id="dt"></span>
+        <!-- TV PREVIEW MODE - Comment out these 2 lines for production -->
+        <!-- <div class="tv-preview">
+            <div class="tv-preview-content"> -->
+        <!-- END TV PREVIEW MODE -->
+                <div class="all">
+                    <div id="timeDisplay">
+                        <div class="h1">
+                            <span id="dt"></span>
+                        </div>
+                        <div class="h2">
+                            <span id="hr"></span>
+                        </div> 
+                        <div class="h3">
+                            <span id="hdow"></span> 
+                        </div>
+                        <div class="h3">
+                            <span id="adow"></span>
+                        </div>
+                        <div class="h3">             
+                            <span id="rdow"></span>
+                        </div>
+                    </div>
+                    <div id="hospitalDisplay" style="display: none;">
+                        <div class="h2">
+                            <span id="hospitalHebrew"></span>
+                        </div>
+                        <div class="h2">
+                            <span id="hospitalArabic"></span>
+                        </div>
+                        <div class="h2">
+                            <span id="hospitalRussian"></span>
+                        </div>
+                        <div class="h3">
+                            <span id="wardHebrew"></span>
+                        </div>
+                        <div class="h3">
+                            <span id="wardArabic"></span>
+                        </div>
+                        <div class="h3">
+                            <span id="wardRussian"></span>
+                        </div>
+                    </div>
+                    <script src="js/clock.js"></script>
                 </div>
-                <div class="h2">
-                    <span id="hr"></span>
-                </div> 
-                <div class="h3">
-                    <span id="hdow"></span> 
-                </div>
-                <div class="h3">
-                    <span id="adow"></span>
-                </div>
-                <div class="h3">             
-                    <span id="rdow"></span>
-                </div>
-            </div>
-            <div id="hospitalDisplay" style="display: none;">
-                <div class="h2">
-                    <span id="hospitalHebrew"></span>
-                </div>
-                <div class="h2">
-                    <span id="hospitalArabic"></span>
-                </div>
-                <div class="h2">
-                    <span id="hospitalRussian"></span>
-                </div>
-                <div class="h3">
-                    <span id="wardHebrew"></span>
-                </div>
-                <div class="h3">
-                    <span id="wardArabic"></span>
-                </div>
-                <div class="h3">
-                    <span id="wardRussian"></span>
-                </div>
-            </div>
-            <script src="js/clock.js"></script>
-        </div>
+        <!-- TV PREVIEW MODE - Comment out these 2 lines for production -->
+            <!-- </div>
+        </div> -->
+        <!-- END TV PREVIEW MODE -->
     </body>
 </html>

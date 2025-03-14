@@ -2,7 +2,7 @@
 const translations = {
   hebrew: {
     hospital: "בית חולים פלימן",
-    ward: "מחלקה ה קומה 2",
+    ward: "מחלקה ה׳ קומה 2",
     days: ["ראשון", "שני", "שלישי", "רביעי", "חמישי", "שישי", "שבת"],
   },
   arabic: {
@@ -83,6 +83,16 @@ function clock() {
 
   setTimeout(clock, REFRESH_RATE);
 }
+
+// Start with hospital display
+document.getElementById("timeDisplay").style.display = "none";
+document.getElementById("hospitalDisplay").style.display = "block";
+
+// Switch to clock display after 30 seconds
+setTimeout(() => {
+  document.getElementById("timeDisplay").style.display = "block";
+  document.getElementById("hospitalDisplay").style.display = "none";
+}, HOSPITAL_DISPLAY_DURATION);
 
 // Start the clock
 clock();

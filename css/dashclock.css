@@ -5,12 +5,55 @@
     margin: 0;
     padding: 0;
 }
+
+/* TV Preview wrapper */
+.tv-preview {
+    position: relative;
+    width: 90vw;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.tv-preview-content {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    background: rgb(180, 242, 246);
+    overflow: hidden;
+}
+
+.tv-preview-content .all {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Add TV frame effect */
+.tv-preview::before {
+    content: "TV Preview (16:9)";
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    color: #333;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
 .body {
     margin: 0;
     font-size: 16px;
     color: rgba(90, 5, 74);
     line-height: 1.2; 
 }
+
 .all {
     margin: 0 auto;
     font-size: 16px;
@@ -20,6 +63,16 @@
     text-align: center !important;
     width: 95vw; /* Leave some margin on sides */
 }
+
+/* Time display styles */
+#timeDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    height: 100%;
+}
+
 .h1 {
     font-weight: 550;
     font-size: 12vw;
@@ -27,6 +80,7 @@
     font-family: sans-serif; 
     text-align: center !important;
 }
+
 .h2 {
     font-size: 10vw;
     font-weight: 700;
@@ -34,10 +88,28 @@
     font-family: sans-serif; 
     text-align: center !important;
 }
+
 .h3 {
     font-size: 8vw;
     font-weight: 700;
     line-height: 1.2; 
     font-family: sans-serif; 
     text-align: center !important;
-  }
+}
+
+/* Hospital display specific styles */
+#hospitalDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 2vh;
+}
+
+#hospitalDisplay .h2 {
+    font-size: 8vw;  /* Increased from 6vw */
+}
+
+#hospitalDisplay .h3 {
+    font-size: 7vw;  /* Increased from previous size */
+}
