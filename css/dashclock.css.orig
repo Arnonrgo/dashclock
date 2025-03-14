@@ -1,0 +1,40 @@
+.bg {
+    background: rgb(180, 242, 246);
+}
+.body {
+    margin: 0 auto;
+    font-size: 16px;
+    color: rgba(90, 5, 74);
+     line-height: 1.2; 
+
+}
+.all {
+     margin: 0 auto;
+    font-size: 16px;
+    color: rgb(128, 12, 107);
+
+     line-height: 1.2; 
+    font-family: sans-serif; 
+    text-align: center !important;
+}
+.h1 {
+    font-weight: 550;
+    font-size: 8rem;
+         line-height: 1.0; 
+    font-family: sans-serif; 
+    text-align: center !important;
+}
+.h2 {
+    font-size: 6rem;
+    font-weight: 700;
+         line-height: 1.0; 
+    font-family: sans-serif; 
+    text-align: center !important;
+}
+.h3 {
+    font-size: 5rem;
+    font-weight: 700;
+         line-height: 1.2; 
+    font-family: sans-serif; 
+    text-align: center !important;
+  }
